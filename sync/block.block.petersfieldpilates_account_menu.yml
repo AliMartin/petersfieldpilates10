@@ -1,0 +1,27 @@
+uuid: e179c1f9-a15f-4075-ac57-e802df910333
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - petersfieldpilates
+_core:
+  default_config_hash: kP255dq9UocMsVe88FlrUW2nAfJBH2D_EtyBDDT_-BQ
+id: petersfieldpilates_account_menu
+theme: petersfieldpilates
+region: nav_additional
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

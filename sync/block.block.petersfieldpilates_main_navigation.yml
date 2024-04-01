@@ -1,0 +1,27 @@
+uuid: d52d1a26-d5fb-445f-953d-efa8ea4b64cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - petersfieldpilates
+_core:
+  default_config_hash: liKFeeojDie-vo6CM-g-G4LXOMmLIR9-un8TEJ2CfAU
+id: petersfieldpilates_main_navigation
+theme: petersfieldpilates
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }
