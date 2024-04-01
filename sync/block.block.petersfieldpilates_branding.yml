@@ -1,5 +1,5 @@
 uuid: b89b4388-f2fc-4835-aab2-9a3611856efa
-langcode: en
+langcode: en-gb
 status: true
 dependencies:
   module:
@@ -10,7 +10,7 @@ _core:
   default_config_hash: Sj0LsKNvcuTNt-JGHofRSTTqwpkb6jWXaWqQI-AqTbo
 id: petersfieldpilates_branding
 theme: petersfieldpilates
-region: nav_branding
+region: header_left
 weight: -6
 provider: null
 plugin: system_branding_block

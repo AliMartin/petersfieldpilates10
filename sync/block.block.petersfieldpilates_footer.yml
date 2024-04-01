@@ -1,5 +1,5 @@
 uuid: 4eafa4d9-8763-4110-bdda-07711d50cc62
-langcode: en
+langcode: en-gb
 status: true
 dependencies:
   config:
@@ -12,8 +12,8 @@ _core:
   default_config_hash: sIeKv1HReTmXvHHLV8QSL5F-XsZzEIGArX7sqkZfq1k
 id: petersfieldpilates_footer
 theme: petersfieldpilates
-region: footer
-weight: -6
+region: footer_lower
+weight: -4
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
