@@ -50,7 +50,7 @@ set nav_classes = 'navbar navbar-expand-lg' ~
 %}
 
 {%
-set footer_classes = ' ' ~
+set footer_classes = 'footer' ~
   (b5_footer_schema != 'none' ? " footer-#{b5_footer_schema}" : ' ') ~
   (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
   (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
@@ -59,21 +59,30 @@ set footer_classes = ' ' ~
 <header>
 
   <div class="container">
-
-    <div id="header_upper_container">
-      <div id="header_upper_container_left">
+    <div class="row header-container">
+      <div class="flex-logo">
         {{ page.header_left }}
+        <a href="/">
+          <span class="text-green">Petersfield</span>
+          <span class="text-black">Pilates</span>
+        </a>
       </div>
-      <div id="header_upper_container_right">
+      <div class="flex-button">
+        <a class="btn btn-primary" href="/contact">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Enquire now</span>
+        </a>
+      </div>
+      <div class="flex-menu">
+        <a class="home-button" href="/">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
         {{ page.header_right }}
+      </div>
     </div>
-    </div>
-    <div id="header_lower_container">
-      {{ page.nav_main }}
-    </div>
-
   </div>
-  
+
 </header>
 
 <main role="main">

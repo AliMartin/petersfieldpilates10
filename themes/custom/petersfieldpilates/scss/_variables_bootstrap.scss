@@ -55,7 +55,7 @@ $container-max-widths: (
 
 // Colours
 $white:         #ffffff !default;
-$black:         #000000 !default;
+$black:         #0D0D0D !default;
 $gray:          #545353 !default;
 
 $green:         #61993c !default;
@@ -64,6 +64,18 @@ $blue:          #6d76a7 !default;
 $blue-light:    #a8d1f7 !default;
 $red:           #ef154f !default;
 $yellow:        #f8c327 !default;
+
+// v2
+// $green:   #078C28 !default;
+// $teal:    #027373 !default;
+// $blue:    #023859 !default;
+// $red:     #730209 !default;
+// $pink:    #F27E85 !default;
+// $purple:  #6F0273 !default;
+// $yellow:  #F2C07E !default;
+// $green-light: #0AC539 !default;
+
+
 
 $color-variants: (
     100:  -10%,
@@ -191,7 +203,7 @@ $enable-hover-media-query: true;
 
 $primary: $green;
 $secondary: $blue;
-$success: $green-success;
+$success: $green;
 $info: $blue;
 $warning: $yellow;
 $danger: $red;

@@ -1,0 +1,110 @@
+.header-container {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+
+  .flex-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    order: 1;
+    width: 35%;
+
+    a {
+      text-decoration: none;
+      font-family: $headings-font-family;
+      font-size: 26px;
+      line-height: 1;
+    }
+  }
+  
+  .flex-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    width: 30%;
+  }
+  
+  .flex-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    order: 3;
+    width: 35%;
+    gap: 10px;
+
+    .home-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid $green;
+      border-radius: 50%;
+      background-color: $white;
+      color: $green;
+      text-decoration: none;
+
+      span {
+        display: none;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        border: 1px solid $green;
+        background-color: $green;
+        color: $white;  
+      }
+    }
+  }
+}
+
+.region-header-right {
+  height: 36px;
+}
+
+@media screen and (min-width: 440px) and (max-width: 991px) {
+  .header-container {
+    .flex-logo {
+      order: 1;
+      width: 70%;
+    }
+    
+    .flex-button {
+      order: 3;
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    .flex-menu {
+      order: 2;
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .header-container {
+    .flex-logo {
+      order: 1;
+      width: 65%;
+
+      a {
+        font-size: 18px;
+      }
+    }
+    
+    .flex-button {
+      order: 3;
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    .flex-menu {
+      order: 2;
+      width: 35%;
+    }
+  }
+}
