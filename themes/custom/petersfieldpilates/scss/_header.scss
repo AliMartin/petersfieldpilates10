@@ -1,5 +1,10 @@
+header {
+  background-color: $white;
+}
+
 .header-container {
-  margin: 30px 0;
+  padding: 30px 0;
+  // margin-bottom: 30px;
   display: flex;
   align-items: center;
 
@@ -65,11 +70,12 @@
   height: 36px;
 }
 
-@media screen and (min-width: 440px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .header-container {
     .flex-logo {
       order: 1;
-      width: 70%;
+      flex-grow: 1;
+      width: inherit;
     }
     
     .flex-button {
@@ -80,7 +86,7 @@
     
     .flex-menu {
       order: 2;
-      width: 30%;
+      width: 110px;
     }
   }
 }
@@ -88,23 +94,19 @@
 @media screen and (max-width: 439px) {
   .header-container {
     .flex-logo {
-      order: 1;
-      width: 65%;
-
       a {
         font-size: 18px;
       }
     }
-    
-    .flex-button {
-      order: 3;
-      width: 100%;
-      margin-top: 10px;
-    }
-    
-    .flex-menu {
-      order: 2;
-      width: 35%;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .header-container {
+    .flex-logo {
+      a span {
+        display: none;
+      }
     }
   }
 }
