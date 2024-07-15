@@ -13923,6 +13923,9 @@ a > .ck-content code {
 .ck-content .path-frontpage .slick--field-image {
   z-index: -1;
 }
+.ck-content .path-frontpage main {
+  height: 70vh;
+}
 .ck-content .path-frontpage #main-content {
   text-align: center;
   padding-top: 90px;

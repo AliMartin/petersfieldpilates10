@@ -15293,6 +15293,9 @@ blockquote p {
 .path-frontpage .slick--field-image {
   z-index: -1;
 }
+.path-frontpage main {
+  height: 70vh;
+}
 .path-frontpage #main-content {
   text-align: center;
   padding-top: 90px;
