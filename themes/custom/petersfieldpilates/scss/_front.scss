@@ -1,10 +1,15 @@
 .path-frontpage {
+
+  // Fixes scrolling issue with Slick
+  overflow: inherit;
+  overflow-x: inherit;
+
   .slick--field-image {
     z-index: -1;
   }
 
   main {
-    height: 70vh;
+    // height: 70vh;
   }
 
   #main-content {

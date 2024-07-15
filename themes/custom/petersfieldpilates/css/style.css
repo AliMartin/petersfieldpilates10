@@ -14791,6 +14791,10 @@ header {
   order: 2;
   width: 30%;
 }
+.header-container .flex-button a {
+  display: flex;
+  gap: 0;
+}
 .header-container .flex-menu {
   display: flex;
   align-items: center;
@@ -15005,6 +15009,9 @@ footer.footer a:hover, footer.footer a:focus, footer.footer a:active {
   font-size: 16px;
   line-height: 16px;
 }
+.btn i, button.link i, .button i, .node-preview-container .node-preview-backlink i {
+  margin-right: 5px;
+}
 
 .btn-primary {
   background-color: #ffffff;
@@ -15017,8 +15024,11 @@ footer.footer a:hover, footer.footer a:focus, footer.footer a:active {
   border-color: #61993c;
 }
 
+.path-testimonials #main-content,
 main .container {
   max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #main-content {
@@ -15054,20 +15064,18 @@ ul.nav-tabs, .media-library-view--widget ul.view-header {
   margin: 0 auto;
 }
 
+.path-testimonials #block-petersfieldpilates-page-title {
+  text-align: center;
+}
+
+.path-frontpage #block-petersfieldpilates-page-title,
 .page-node-type-article #block-petersfieldpilates-page-title,
 .page-node-type-testimonial #block-petersfieldpilates-page-title,
+.page-node-type-webform #block-petersfieldpilates-page-title,
 .page-node-type-class #block-petersfieldpilates-page-title {
   display: none;
 }
 
-/*
-.field--name-title {
-  padding: 30px 0 10px 0;
-  h1 {
-    margin: 0;
-  }
-}
-*/
 h2, .h2,
 h3,
 .h3,
@@ -15082,6 +15090,11 @@ h4,
   border-radius: 20px;
 }
 
+.page-node-type-class #group-content,
+.page-node-type-webform #group-content {
+  text-align: center;
+}
+
 blockquote {
   background-color: #eeeeee;
   border-left: #6d76a7 solid 5px;
@@ -15090,6 +15103,11 @@ blockquote {
 }
 blockquote p {
   margin: 0;
+}
+
+.field--name-field-attachment {
+  margin-top: 60px;
+  text-align: center;
 }
 
 .field--name-field-attachments .field__item {
@@ -15234,6 +15252,22 @@ blockquote p {
   margin-bottom: 0.5rem;
 }
 
+.field--name-webform {
+  margin-top: 60px;
+  text-align: center;
+}
+.field--name-webform .form-control {
+  text-align: center;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.messages__wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .path-media-gallery main {
   max-width: 1500px;
   margin: 0 auto;
@@ -15252,11 +15286,12 @@ blockquote p {
   gap: 10px;
 }
 
+.path-frontpage {
+  overflow: inherit;
+  overflow-x: inherit;
+}
 .path-frontpage .slick--field-image {
   z-index: -1;
-}
-.path-frontpage main {
-  height: 70vh;
 }
 .path-frontpage #main-content {
   text-align: center;

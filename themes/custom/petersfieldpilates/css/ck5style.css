@@ -27,14 +27,6 @@
   /* rtl:begin:remove */
   /* rtl:end:remove */
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-  /*
-  .field--name-title {
-    padding: 30px 0 10px 0;
-    h1 {
-      margin: 0;
-    }
-  }
-  */
 }
 .ck-content .text-blue {
   color: #6d76a7 !important;
@@ -13470,6 +13462,10 @@ a > .ck-content code {
   order: 2;
   width: 30%;
 }
+.ck-content .header-container .flex-button a {
+  display: flex;
+  gap: 0;
+}
 .ck-content .header-container .flex-menu {
   display: flex;
   align-items: center;
@@ -13676,6 +13672,9 @@ a > .ck-content code {
   font-size: 16px;
   line-height: 16px;
 }
+.ck-content .btn i, .ck-content button.link i, .ck-content .button i, .ck-content .node-preview-container .node-preview-backlink i {
+  margin-right: 5px;
+}
 .ck-content .btn-primary {
   background-color: #ffffff;
   color: #61993c;
@@ -13686,8 +13685,11 @@ a > .ck-content code {
   color: #ffffff;
   border-color: #61993c;
 }
+.ck-content .path-testimonials #main-content,
 .ck-content main .container {
   max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .ck-content #main-content {
   margin-bottom: 120px;
@@ -13718,8 +13720,13 @@ a > .ck-content code {
   max-width: 850px;
   margin: 0 auto;
 }
+.ck-content .path-testimonials #block-petersfieldpilates-page-title {
+  text-align: center;
+}
+.ck-content .path-frontpage #block-petersfieldpilates-page-title,
 .ck-content .page-node-type-article #block-petersfieldpilates-page-title,
 .ck-content .page-node-type-testimonial #block-petersfieldpilates-page-title,
+.ck-content .page-node-type-webform #block-petersfieldpilates-page-title,
 .ck-content .page-node-type-class #block-petersfieldpilates-page-title {
   display: none;
 }
@@ -13735,6 +13742,10 @@ a > .ck-content code {
   height: auto;
   border-radius: 20px;
 }
+.ck-content .page-node-type-class #group-content,
+.ck-content .page-node-type-webform #group-content {
+  text-align: center;
+}
 .ck-content blockquote {
   background-color: #eeeeee;
   border-left: #6d76a7 solid 5px;
@@ -13743,6 +13754,10 @@ a > .ck-content code {
 }
 .ck-content blockquote p {
   margin: 0;
+}
+.ck-content .field--name-field-attachment {
+  margin-top: 60px;
+  text-align: center;
 }
 .ck-content .field--name-field-attachments .field__item {
   display: flex;
@@ -13870,6 +13885,20 @@ a > .ck-content code {
   font-size: xx-large;
   margin-bottom: 0.5rem;
 }
+.ck-content .field--name-webform {
+  margin-top: 60px;
+  text-align: center;
+}
+.ck-content .field--name-webform .form-control {
+  text-align: center;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ck-content .messages__wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
 .ck-content .path-media-gallery main {
   max-width: 1500px;
   margin: 0 auto;
@@ -13887,11 +13916,12 @@ a > .ck-content code {
   justify-content: center;
   gap: 10px;
 }
+.ck-content .path-frontpage {
+  overflow: inherit;
+  overflow-x: inherit;
+}
 .ck-content .path-frontpage .slick--field-image {
   z-index: -1;
-}
-.ck-content .path-frontpage main {
-  height: 70vh;
 }
 .ck-content .path-frontpage #main-content {
   text-align: center;
