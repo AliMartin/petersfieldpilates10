@@ -13685,6 +13685,7 @@ a > .ck-content code {
   color: #ffffff;
   border-color: #61993c;
 }
+.ck-content .page-node-type-page,
 .ck-content .path-testimonials #main-content,
 .ck-content main .container {
   max-width: 850px;
@@ -13951,6 +13952,68 @@ a > .ck-content code {
   line-height: 1.1;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
   margin-bottom: 30px;
+}
+.ck-content #sliding-popup {
+  width: 100%;
+  background-color: #ffffff;
+  color: #0D0D0D;
+  border-top: 1px solid #0D0D0D;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.ck-content #sliding-popup #popup-text {
+  margin-bottom: 1rem;
+}
+.ck-content #sliding-popup #popup-text h2, .ck-content #sliding-popup #popup-text .h2 {
+  padding-top: 0;
+  font-size: 1.6rem;
+}
+.ck-content #sliding-popup #popup-text p {
+  font-size: 1rem;
+  font-weight: inherit;
+  margin-bottom: 0.5rem;
+}
+.ck-content #sliding-popup #popup-text button {
+  border: inherit;
+  border-bottom: 1px dotted #ffffff;
+  background-color: inherit;
+  text-decoration: none;
+  color: #61993c;
+  font-size: 1rem;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: inherit;
+  height: inherit;
+}
+.ck-content #sliding-popup #popup-text button:hover {
+  color: #61993c;
+  padding: 0;
+  text-decoration: none;
+  background-color: inherit;
+  border: inherit;
+  border-bottom: 1px dotted #61993c;
+}
+.ck-content #sliding-popup #popup-buttons {
+  margin-bottom: 1rem;
+}
+.ck-content #sliding-popup #popup-buttons .agree-button,
+.ck-content #sliding-popup #popup-buttons .decline-button {
+  border: 1px solid #61993c;
+  background-color: #ffffff;
+  color: #0D0D0D;
+  background-image: inherit;
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+.ck-content #sliding-popup #popup-buttons .agree-button:hover,
+.ck-content #sliding-popup #popup-buttons .decline-button:hover {
+  border: 1px solid #61993c;
+  background-color: #61993c;
+  color: #ffffff;
+  background-image: inherit;
+  box-shadow: inherit;
+  text-shadow: inherit;
 }
 
 /*# sourceMappingURL=ck5style.css.map */
