@@ -15047,7 +15047,7 @@ ul.nav-tabs, .media-library-view--widget ul.view-header {
 }
 #group-hero .field--name-title {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
